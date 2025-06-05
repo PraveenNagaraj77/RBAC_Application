@@ -1,14 +1,14 @@
-/* Container & layout */
+/* Container & Layout */
 .admin-container {
   min-height: 100vh;
   width: 100%;
-  background-color: #f9fafb; /* light gray */
-  padding: 40px 24px;
+  background-color: #f9fafb;
+  padding: 2.5rem 1.5rem;
   box-sizing: border-box;
 }
 
 .admin-inner {
-  max-width: 1120px; /* like max-w-7xl */
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -16,23 +16,24 @@
 .admin-title {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 32px;
+  color: #2563eb;
   text-align: center;
-  color: #2563eb; /* blue-700 */
+  margin-bottom: 2rem;
 }
 
 .section-title {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  color: #111827;
 }
 
-/* Loading */
+/* Loading Indicator */
 .loading-text {
   text-align: center;
-  color: #6b7280; /* gray-500 */
-  margin-bottom: 24px;
+  color: #6b7280;
   font-weight: 500;
+  margin-bottom: 1.5rem;
   animation: pulse 1.5s infinite ease-in-out;
 }
 
@@ -45,40 +46,39 @@
   }
 }
 
-/* Form row (flex container for inputs and buttons) */
+/* Form Layout */
 .form-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 1.5rem;
   align-items: center;
 }
 
 /* Inputs */
 .input-text,
 .input-select {
-  flex: 1 1 auto;
-  min-width: 200px;
-  padding: 12px 20px;
-  border: 1px solid #d1d5db; /* gray-300 */
-  border-radius: 8px;
+  flex: 1 1 240px;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
-  outline: none;
-  transition: border-color 0.2s ease;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .input-text:focus,
 .input-select:focus {
-  border-color: #60a5fa; /* blue-400 */
+  border-color: #60a5fa;
   box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.4);
+  outline: none;
 }
 
 /* Buttons */
 .btn {
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 8px;
-  color: white;
+  border-radius: 0.5rem;
+  color: #fff;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -92,62 +92,63 @@
 }
 
 .btn-blue {
-  background-color: #2563eb; /* blue-600 */
+  background-color: #2563eb;
 }
 
 .btn-blue:hover:not(:disabled) {
-  background-color: #1d4ed8; /* blue-700 */
+  background-color: #1d4ed8;
 }
 
 .btn-green {
-  background-color: #16a34a; /* green-600 */
+  background-color: #16a34a;
 }
 
 .btn-green:hover:not(:disabled) {
-  background-color: #15803d; /* green-700 */
+  background-color: #15803d;
 }
 
 .btn-purple {
-  background-color: #7c3aed; /* purple-600 */
+  background-color: #7c3aed;
 }
 
 .btn-purple:hover:not(:disabled) {
-  background-color: #6d28d9; /* purple-700 */
+  background-color: #6d28d9;
 }
 
-/* Sections */
+/* Section Card */
 .section-card {
-  background-color: white;
-  border-radius: 16px;
-  padding: 32px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2.5rem;
 }
 
-/* Roles overview cards */
+/* Role Cards */
 .role-card {
-  background-color: #f9fafb; /* gray-50 */
-  border: 1px solid #d1d5db; /* gray-300 */
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 24px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .role-name {
   font-size: 1.25rem;
   font-weight: 700;
-  display: block;
-  margin-bottom: 8px;
-  color: #111827; /* gray-900 */
+  color: #111827;
+  margin-bottom: 0.5rem;
 }
 
 .role-permissions {
-  color: #374151; /* gray-700 */
-  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #374151;
+  margin-top: 0.5rem;
 }
 
-/* No data text */
+/* No Data Placeholder */
 .no-data-text {
-  color: #6b7280; /* gray-500 */
+  font-style: italic;
+  color: #6b7280;
   text-align: center;
 }

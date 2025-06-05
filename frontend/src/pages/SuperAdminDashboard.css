@@ -1,190 +1,113 @@
-.superadmin-container {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
+/* Layout and Container */
+.superadmin-container,
+.admin-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  border-radius: 12px;
 }
 
+/* Titles */
+.admin-title,
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1f2937;
+}
+
+/* Dashboard Card */
 .dashboard-card {
   background-color: #1e1e2f;
   color: #fff;
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
 }
 
 .section {
   margin-top: 2rem;
 }
 
-.button-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.button {
-  padding: 0.7rem 1.2rem;
-  background-color: #4f46e5;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #3730a3;
-}
-
-.logoutButton {
-  background-color: #dc2626;
-  margin-top: 1rem;
-}
-
-.logoutButton:hover {
-  background-color: #b91c1c;
-}
-
-.badge {
-  background-color: #2563eb;
-  padding: 0.4rem 0.8rem;
-  border-radius: 12px;
-  margin-right: 0.5rem;
-  display: inline-block;
-  font-size: 0.9rem;
-}
-
-.note {
-  color: #9ca3af;
-  font-style: italic;
-}
-
-
-.admin-container {
-  max-width: 1100px;
-  margin: 2rem auto;
-  padding: 1rem 1.5rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.admin-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: #222;
-}
-
-/* Stats Cards Container */
+/* Stats Section */
 .stats-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.2rem;
-  margin-bottom: 2rem;
+  gap: 1.5rem;
 }
 
 .stat-card {
-  background: #f0f4f8;
-  border-radius: 8px;
-  padding: 1.4rem;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
-  transition: transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
 }
 
 .stat-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
 }
 
 .stat-card h3 {
   font-weight: 600;
-  margin-bottom: 0.6rem;
   color: #3b82f6;
+  margin-bottom: 0.5rem;
 }
 
 .stat-card p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  color: #111;
-  margin: 0;
+  color: #111827;
 }
 
 .stat-card small {
-  color: #666;
+  color: #6b7280;
   font-size: 0.85rem;
-  display: block;
-  margin-top: 0.3rem;
 }
 
-/* Navigation Buttons */
-.nav-buttons {
+/* Navigation and Button Group */
+.nav-buttons,
+.button-group {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+  margin: 1.5rem 0;
 }
 
-.nav-buttons button {
-  background-color: #2563eb;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.25s ease;
-}
-
-.nav-buttons button:hover {
-  background-color: #1e40af;
-}
-
-.section-card {
-  background: white;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.07);
-}
-
-.section-title {
-  margin-bottom: 1rem;
-  color: #111;
-  font-weight: 700;
-  font-size: 1.4rem;
-}
-
-.form-row {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.input-text, .input-select {
-  flex: 1 1 200px;
-  padding: 0.55rem 1rem;
-  border: 1.8px solid #ddd;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-}
-
-.input-text:focus, .input-select:focus {
-  outline: none;
-  border-color: #3b82f6;
-}
-
+.button,
+.nav-buttons button,
 .btn {
-  min-width: 110px;
+  padding: 0.7rem 1.4rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.25s ease;
-  color: white;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.button,
+.nav-buttons button {
+  background-color: #4f46e5;
+}
+
+.button:hover,
+.nav-buttons button:hover {
+  background-color: #3730a3;
+}
+
+.logoutButton {
+  background-color: #ef4444;
+}
+
+.logoutButton:hover {
+  background-color: #b91c1c;
 }
 
 .btn-blue {
@@ -211,35 +134,79 @@
   background-color: #5b21b6;
 }
 
-.loading-text {
-  text-align: center;
-  font-weight: 600;
-  color: #666;
-  margin: 1rem 0;
+/* Forms */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
+.input-text,
+.input-select {
+  flex: 1 1 200px;
+  padding: 0.6rem 1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-text:focus,
+.input-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* Content Sections */
+.section-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  margin-bottom: 2rem;
+}
+
+/* Roles */
 .role-card {
-  background: #f9fafb;
-  padding: 1rem 1.2rem;
-  margin-bottom: 0.8rem;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 0.05);
+  background: #f3f4f6;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
 }
 
 .role-name {
   font-weight: 700;
-  color: #111;
+  color: #1f2937;
 }
 
 .role-permissions {
   font-size: 0.9rem;
-  color: #555;
-  margin-top: 0.3rem;
+  color: #4b5563;
+  margin-top: 0.25rem;
 }
 
-.no-data-text {
-  color: #999;
+/* Badges and Notes */
+.badge {
+  background-color: #2563eb;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  display: inline-block;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.note {
+  color: #6b7280;
   font-style: italic;
-  padding: 1rem 0;
   text-align: center;
+}
+
+.loading-text,
+.no-data-text {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 1rem;
 }
