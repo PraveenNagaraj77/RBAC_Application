@@ -16,7 +16,7 @@ async function bootstrap() {
   // Run the seed script after app creation but before listening
   const seedService = app.get(SeedService);
   await seedService.seedSuperAdmin();
-  await seedService.seedPermissions();
+
 
   await app.listen(process.env.PORT ?? 3000);
 }
