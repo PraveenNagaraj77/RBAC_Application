@@ -1,0 +1,153 @@
+/* Container & layout */
+.admin-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f9fafb; /* light gray */
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+.admin-inner {
+  max-width: 1120px; /* like max-w-7xl */
+  margin: 0 auto;
+}
+
+/* Titles */
+.admin-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-align: center;
+  color: #2563eb; /* blue-700 */
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Loading */
+.loading-text {
+  text-align: center;
+  color: #6b7280; /* gray-500 */
+  margin-bottom: 24px;
+  font-weight: 500;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Form row (flex container for inputs and buttons) */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+/* Inputs */
+.input-text,
+.input-select {
+  flex: 1 1 auto;
+  min-width: 200px;
+  padding: 12px 20px;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input-text:focus,
+.input-select:focus {
+  border-color: #60a5fa; /* blue-400 */
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.4);
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-blue {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.btn-blue:hover:not(:disabled) {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.btn-green {
+  background-color: #16a34a; /* green-600 */
+}
+
+.btn-green:hover:not(:disabled) {
+  background-color: #15803d; /* green-700 */
+}
+
+.btn-purple {
+  background-color: #7c3aed; /* purple-600 */
+}
+
+.btn-purple:hover:not(:disabled) {
+  background-color: #6d28d9; /* purple-700 */
+}
+
+/* Sections */
+.section-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+/* Roles overview cards */
+.role-card {
+  background-color: #f9fafb; /* gray-50 */
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.role-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+  color: #111827; /* gray-900 */
+}
+
+.role-permissions {
+  color: #374151; /* gray-700 */
+  margin-top: 8px;
+}
+
+/* No data text */
+.no-data-text {
+  color: #6b7280; /* gray-500 */
+  text-align: center;
+}

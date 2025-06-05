@@ -1,0 +1,43 @@
+/* UserPage.css */
+
+.container {
+  min-height: 100vh;
+  background-color: #f3f4f6; /* Tailwind gray-100 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 640px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563eb; /* Tailwind blue-700 */
+  margin-bottom: 1rem;
+}
+
+.text {
+  color: #374151; /* Tailwind gray-700 */
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.boldText {
+  font-weight: 600;
+}
+
+.subText {
+  color: #4b5563;
+  font-size: 0.95rem;
+}

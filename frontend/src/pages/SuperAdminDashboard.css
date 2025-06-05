@@ -1,0 +1,245 @@
+.superadmin-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dashboard-card {
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.7rem 1.2rem;
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3730a3;
+}
+
+.logoutButton {
+  background-color: #dc2626;
+  margin-top: 1rem;
+}
+
+.logoutButton:hover {
+  background-color: #b91c1c;
+}
+
+.badge {
+  background-color: #2563eb;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  margin-right: 0.5rem;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.note {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+
+.admin-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #222;
+}
+
+/* Stats Cards Container */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: #f0f4f8;
+  border-radius: 8px;
+  padding: 1.4rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+}
+
+.stat-card h3 {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: #3b82f6;
+}
+
+.stat-card p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.stat-card small {
+  color: #666;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.3rem;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-buttons button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #1e40af;
+}
+
+.section-card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.07);
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  color: #111;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.input-text, .input-select {
+  flex: 1 1 200px;
+  padding: 0.55rem 1rem;
+  border: 1.8px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-text:focus, .input-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.btn {
+  min-width: 110px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  color: white;
+}
+
+.btn-blue {
+  background-color: #3b82f6;
+}
+
+.btn-blue:hover {
+  background-color: #2563eb;
+}
+
+.btn-green {
+  background-color: #16a34a;
+}
+
+.btn-green:hover {
+  background-color: #14532d;
+}
+
+.btn-purple {
+  background-color: #7c3aed;
+}
+
+.btn-purple:hover {
+  background-color: #5b21b6;
+}
+
+.loading-text {
+  text-align: center;
+  font-weight: 600;
+  color: #666;
+  margin: 1rem 0;
+}
+
+.role-card {
+  background: #f9fafb;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.8rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.05);
+}
+
+.role-name {
+  font-weight: 700;
+  color: #111;
+}
+
+.role-permissions {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+.no-data-text {
+  color: #999;
+  font-style: italic;
+  padding: 1rem 0;
+  text-align: center;
+}
